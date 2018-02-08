@@ -10,7 +10,7 @@ CONCAT(ToString(SubtractDuration(ToDate(c_rel_iss,'yyyyMMdd','America/New_York')
 CONCAT(ToString(SubtractDuration(ToDate(c_rel_iss,'yyyyMMdd','America/New_York'),'P21D'),'yyyyMMdd'),'^F') as c_rel_iss_F,
 CONCAT(ToString(SubtractDuration(ToDate(c_rel_iss,'yyyyMMdd','America/New_York'),'P14D'),'yyyyMMdd'),'^G') as c_rel_iss_G,
 CONCAT(ToString(SubtractDuration(ToDate(c_rel_iss,'yyyyMMdd','America/New_York'),'P7D'),'yyyyMMdd'),'^H') as c_rel_iss_H;
-
+#adding comments 
 
 NAFTA_GPR_WEEKLY_ODETTE_CURR1 = FOREACH NAFTA_GPR_WEEKLY_ODETTE_CURR GENERATE n_region,i_plt,i_suplr,i_part,c_rel_iss,i_mod_yr, TOBAG(c_rel_iss_A,c_rel_iss_B,c_rel_iss_C,c_rel_iss_D,c_rel_iss_E,c_rel_iss_F,c_rel_iss_G,c_rel_iss_H) as prior_8_weeks_date;
 
