@@ -1,5 +1,5 @@
 
-#Adding comments
+#Adding comments 1.2
 NAFTA_FORECAST_RAW = LOAD '/ODS/PROCUREMENT/GPR_KPI/NAFTA_FORECAST' Using PigStorage('~') As (n_region:chararray,i_plt:chararray,i_suplr:chararray,i_part:chararray,c_rel_iss:chararray,i_mod_yr:chararray,c_rel_iss_pre_8:chararray,c_rel_iss_pre_7:chararray,c_rel_iss_pre_6:chararray,c_rel_iss_pre_5:chararray,c_rel_iss_pre_4:chararray,c_rel_iss_pre_3:chararray,c_rel_iss_pre_2:chararray,c_rel_iss_pre_1:chararray,q_odette_frcst_8wpf:chararray,q_odette_frcst_7wpf:chararray,q_odette_frcst_6wpf:chararray,q_odette_frcst_5wpf:chararray,q_odette_frcst_4wpf:chararray,q_odette_frcst_3wpf:chararray,q_odette_frcst_2wpf:chararray,q_odette_frcst_1wpf:chararray);
 
 NAFTA_ACTUAL_RAW = LOAD '/ODS/PROCUREMENT/GPR_KPI/NAFTA_ACTUAL' Using PigStorage('~') As (n_region:chararray,i_plt:chararray,i_suplr:chararray,i_part:chararray,c_rel_iss:chararray,i_mod_yr:chararray,c_rel_iss_pre_1:chararray,c_rel_iss_pre_2:chararray,c_rel_iss_pre_3:chararray,c_rel_iss_pre_4:chararray,c_rel_iss_pre_5:chararray,c_rel_iss_pre_6:chararray,c_rel_iss_pre_7:chararray,c_rel_iss_pre_8:chararray,actual_8wpf:chararray,actual_7wpf:chararray,actual_6wpf:chararray,actual_5wpf:chararray,actual_4wpf:chararray,actual_3wpf:chararray,actual_2wpf:chararray,actual_1wpf:chararray);
